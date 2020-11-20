@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500&display=swap');
+
+:root {
+  --dark: #222222;
+  --mid: #616161;
+  --text: #222222;
+  --bg1: #fbfbfb;
+  --bg2: #f1f1f1;
+  --bg3: #ededed;
+  --accent1: #e55039;
+  --accent2: #079d67;
+  --main: #b65142;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+a {
+  list-style: none;
+  color: inherit;
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 16px;
+}
+
+.container {
+  margin-bottom: 40px;
+  width: 1440px;
+}
+
+/* header */
+header {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+header .container {
+  width: 1440px;
+  height: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+header .container .logo {
+  width: 151px;
+}
+
+header .container ul {
+  display: flex;
+}
+
+header .container .nav li {
+  margin-right: 55px;
+}
+
+header .container .nav li:last-child {
+  margin-right: initial;
+}
+
+header .container .nav {
+  font-size: 25px;
+}
+
+header .container .extra li {
+  font-size: 16px;
+  margin-right: 50px;
+  color: var(--main);
+}
+
+/* slider */
+.slider {
+  width: 100%;
+  height: 500px;
+}
+
+/* content_01 */
+.content_01 .container {
+  margin-bottom: initial;
+}
+
+.content_01 .container .bg {
+  width: 100vh;
+  height: 735px;
+  background: url(../images/main_slide.jpg)
+    no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.bg .main_text {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 8%;
+}
+
+.bg .main_text h2 {
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--accent1);
+  text-align: left;
+  margin-bottom: 85px;
+}
+
+.bg .main_text p {
+  line-height: 1.2;
+  font-size: 35px;
+  color: #666666;
+  margin-bottom: 60px;
+}
+
+.bg .main_text p span {
+  color: #f9af41;
+}
+
+.bg .main_text button {
+  width: 242px;
+  height: 80px;
+  font-size: 25px;
+  border: 1px solid var(--main);
+  background: var(--main);
+  color: #f1f1f1;
+  cursor: pointer;
+}
+
+/* banner */
+.banner {
+  width: 100vh;
+  height: 346px;
+  background: url(../images/banner.jpeg) no-repeat;
+  background-size: cover;
+}
