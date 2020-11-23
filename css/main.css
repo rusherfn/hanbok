@@ -30,7 +30,7 @@ body {
 
 .container {
   margin-bottom: 40px;
-  width: 1440px;
+  /* width: 1440px; */
 }
 
 /* header */
@@ -81,11 +81,12 @@ header .container .extra li {
 
 /* content_01 */
 .content_01 .container {
+  margin: 0 auto;
   margin-bottom: initial;
 }
 
 .content_01 .container .bg {
-  width: 100vh;
+  width: 100%;
   height: 735px;
   background: url(../images/main_slide.jpg)
     no-repeat;
@@ -115,7 +116,7 @@ header .container .extra li {
   color: #666666;
   margin-bottom: 60px;
 }
-
+box-shadow: 12px 12px 20px rgba(0, 0, 0, 0.15);
 .bg .main_text p span {
   color: #f9af41;
 }
@@ -132,8 +133,87 @@ header .container .extra li {
 
 /* banner */
 .banner {
-  width: 100vh;
+  width: 100%;
   height: 346px;
   background: url(../images/banner.jpeg) no-repeat;
   background-size: cover;
+  margin-bottom: 40px;
+}
+
+/* content_02 */
+.content_02 .container {
+  width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+
+.content_02 .title {
+  text-align: center;
+}
+
+.content_02 h3 {
+  font-size: 30px;
+  font-weight: bold;
+  color: var(--accent1);
+  margin: 40px 0 20px;
+}
+
+.content_02 .title p {
+  font-size: 20px;
+  color: #616161;
+  margin-bottom: 60px;
+}
+
+.content_02 .cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.content_02 .card_01,
+.content_02 .card_02 {
+  border: 1px solid red;
+  background: #ffffff;
+  box-shadow: 12px 12px 20px rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  padding: 36px;
+  width: 576px;
+  height: 327px;
+  text-align: left;
+}
+
+.content_02 .cards .photo {
+  width: 205px;
+  height: 255px;
+  margin-right: 15px;
+}
+
+.content_02 .cards .card_text {
+}
+.content_02 .cards .card_text h4 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.content_02 .cards .card_text p {
+  font-size: 14px;
+  color: #838383;
+}
+
+.content_02 .cards .card_text p:first-child {
+  font-size: 15px;
+}
+
+.content_02 span:nth-child(3) {
+  text-align: right;
+  font-size: 20px;
+  color: var(--accent1);
+  text-decoration: underline;
+  cursor: pointer;
 }
