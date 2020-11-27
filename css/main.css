@@ -35,7 +35,7 @@ body {
 
 /* header */
 header {
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.5);
 }
 
 header .container {
